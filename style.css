@@ -1,0 +1,238 @@
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F8F5EF;
+    color: #493D32;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #EDE5D8;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    color: #796B5D;
+}
+
+/* General sections */
+section {
+    padding: 70px 12%;
+}
+
+section h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #604C3D;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #EDE5D8;
+    color: #796B5D;
+}
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #604C3D;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #A17B5A;
+}
+/* Discover More button */
+#home > a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #80634D;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+#home > a:hover {
+    background-color: #604C3D;
+}
+/* Portfolio sections */
+section {
+    padding: 80px 12%;
+    border-bottom: 1px solid #E5DCCE;
+}
+
+/* Section paragraphs */
+section p {
+    max-width: 750px;
+    font-size: 17px;
+    color: #796B5D;
+    line-height: 1.9;
+}
+
+/* Alternating section backgrounds */
+#about, #skills, #contact {
+    background-color: #FFFDF9;
+}
+
+#education, #projects {
+    background-color: #F1EADF;
+}
+/* Welcome section */
+header {
+    padding: 0;
+}
+
+#home {
+    padding: 100px 20px 120px;
+}
+
+#home > p:first-child {
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #80634D;
+    margin-bottom: 15px;
+}
+
+#home h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    color: #493D32;
+}
+
+#home > p:nth-child(3) {
+    font-size: 18px;
+    color: #796B5D;
+}
+/* Elegant section headings */
+section h2 {
+    font-size: 32px;
+    color: #604C3D;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background-color: #A17B5A;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+/* Sticky navigation bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #EDE5D8;
+    border-bottom: 1px solid #D9CBBB;
+}
+/* Footer styling */
+footer {
+    padding: 35px 20px;
+    background-color: #EDE5D8;
+    color: #796B5D;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #D9CBBB;
+}
+/* Mobile responsive design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    #home {
+        padding: 70px 20px;
+    }
+
+    section {
+        padding: 50px 8%;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
+/* Skills styling */
+#skills p {
+    display: inline-block;
+    background-color: #EDE5D8;
+    color: #604C3D;
+    padding: 12px 22px;
+    margin: 8px 6px;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#skills p:hover {
+    background-color: #80634D;
+    color: white;
+}
+/* Projects section styling */
+#projects p {
+    background-color: #FFFDF9;
+    padding: 25px 30px;
+    border-left: 4px solid #A17B5A;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(73, 61, 50, 0.06);
+}
+/* Smooth section transitions */
+section {
+    transition: background-color 0.3s ease;
+}
+
+/* Smooth link transitions */
+nav a {
+    transition: color 0.3s ease;
+}
